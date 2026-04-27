@@ -159,7 +159,9 @@ Un marchand spectral vous propose des items rares en échange d'Âmes (ressource
 Une épreuve morale : le donjon vous pose une question ambiguë. La bonne réponse réduit la Corruption de 10% et octroie un buff pour le run. La mauvaise donne une malédiction. Il n'y a pas toujours de "bonne" réponse évidente.
 
 #### La Salle des Miroirs
-Affrontez un **clone de vous-même** avec vos propres attributs et équipement (légèrement réduits). Vaincre votre double rapporte une récompense unique. Attention : le clone connaît vos stratégies.
+Affrontez un **clone de vous-même** avec vos propres attributs et équipement (légèrement réduits). Vaincre votre double rapporte une récompense unique.
+!!! danger "Attention"
+    le clone connaît vos stratégies.
 
 #### Le Nexus Temporel
 Le temps se ralentit. Précision et timing sont cruciaux. Des projectiles bougent au ralenti — esquivez-les ou renvoyez-les. Compléter le Nexus donne un Éclat de Temps : fragment rare pour la Forge.
@@ -289,7 +291,8 @@ Certains attributs spéciaux peuvent **évoluer** avec l'usage. Leur niveau mont
 | ANCIENT | 2000 kills | Texte or avec étoile |
 | LEGENDARY | 5000 kills | Texte arc-en-ciel animé |
 
-**Attention** : Les attributs vivants perdent leur progression si l'item est vendu ou échangé. Réfléchissez avant de vous en séparer.
+!!! danger **Attention**
+    Les attributs vivants perdent leur progression si l'item est vendu ou échangé. Réfléchissez avant de vous en séparer.
 
 ---
 
@@ -338,7 +341,8 @@ Certaines **combinaisons d'attributs** sur votre équipement total déclenchent 
 - Les synergies actives sont visibles dans le lore de vos items (icône spécial)
 - Expérimenter les combinaisons fait partie du plaisir du jeu — découvrez-les vous-même !
 
-**Conseil** : Le Forgeron vous permet de tester différentes combinaisons. Ne vous enfermez pas dans une seule façon de jouer.
+!!! info "**Conseil**"
+    Le Forgeron vous permet de tester différentes combinaisons. Ne vous enfermez pas dans une seule façon de jouer.
 
 ---
 
