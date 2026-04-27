@@ -1,0 +1,51 @@
+site_name: "The Hunt : Abyss Protocol — Wiki"
+site_description: "Guide officiel des Chasseurs de l'Abysse"
+site_author: "Abyss Team"
+
+# Configuration de l'apparence
+theme:
+  name: material
+  language: fr
+  favicon: assets/favicon.png
+  logo: material/sword-cross
+  palette:
+    # Mode sombre automatique basé sur l'Abysse
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Passer au mode clair
+    - scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Passer au mode sombre
+  features:
+    - navigation.tabs          # Menu horizontal en haut
+    - navigation.sections      # Sections claires dans la barre latérale
+    - navigation.top           # Bouton retour en haut
+    - search.suggest           # Suggestions de recherche
+    - search.highlight         # Surlignage des résultats
+    - content.code.copy        # Bouton copier sur les commandes (/thehunt...)
+
+# Navigation : On ne liste QUE le contenu public
+nav:
+  - "Accueil": index.md
+  # Tu pourras ajouter d'autres pages ici plus tard dans le dossier docs/
+
+# Personnalisation Markdown (Extensions)
+markdown_extensions:
+  - admonition                # Pour faire des blocs !!! info, !!! danger, etc.
+  - pymdownx.details          # Pour des blocs repliables
+  - pymdownx.superfences      # Meilleure gestion du code
+  - tables                    # Support des beaux tableaux
+  - attr_list                 # Permet d'ajouter du style CSS
+  - pymdownx.emoji:           # Support des emojis :heart:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Plugins
+plugins:
+  - search

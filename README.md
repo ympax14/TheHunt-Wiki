@@ -1,2 +1,0 @@
-# TheHunt-Wiki
-# TheHunt-Wiki
