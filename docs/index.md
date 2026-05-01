@@ -931,6 +931,8 @@ Proposez un échange avec `/thehunt trade <joueur>`.
 | Commande | Description |
 |----------|-------------|
 | `/thehunt stats [joueur]` | Voir ses statistiques |
+| `/thehunt dungeon` | Démarrer un donjon |
+| `/thehunt dungeon seed <seed>` | Rejouer un donjon exact |
 | `/thehunt map` | Minimap du donjon actif |
 | `/thehunt bp [claim\|status]` | Battle Pass |
 | `/thehunt contracts` | Contrats de Chasse |
@@ -1025,7 +1027,7 @@ Proposez un échange avec `/thehunt trade <joueur>`.
 
 ??? question "Puis-je rejouer le même donjon ?"
     Oui ! Notez le seed affiché après la génération et utilisez
-    `/thehunt admin dungeon seed <seed>` pour le reproduire exactement.
+    `/thehunt dungeon seed <seed>` pour le reproduire exactement.
 
 ??? question "Les caisses sont-elles pay-to-win ?"
     Les caisses premium donnent des items potentiellement plus puissants visuellement,
