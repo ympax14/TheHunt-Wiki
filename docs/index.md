@@ -69,19 +69,19 @@ Quatre factions se disputent le contrôle des artéfacts abyssaux :
 
 The Hunt fonctionne sur **3 niveaux de temps** :
 
-=== "Loop court — La Plongée (5-15 min)"
+!!! info "Loop court — La Plongée (5-15 min)"
     Chaque fois que vous lancez un donjon, c'est une **Plongée**. Vous descendez dans les
     profondeurs, affrontez des monstres, explorez les salles et tentez de vaincre le boss final.
 
-    !!! danger "Roguelite partiel"
+!!! danger "Roguelite partiel"
         Si vous mourez dans un donjon, vous perdez les items équipés pendant le run.
         Votre inventaire hors-donjon est conservé.
 
-=== "Loop moyen — La Session (1-3h)"
+!!! info "Loop moyen — La Session (1-3h)"
     Au fil de plusieurs Plongées, vous progressez dans vos **Contrats de Chasse**, gagnez de
     la réputation auprès de votre **Faction** et accumulez de l'Or.
 
-=== "Loop long — L'Ère (4 semaines)"
+!!! info "Loop long — L'Ère (4 semaines)"
     Chaque **Ère** est une saison complète avec son propre Battle Pass, ses récompenses
     exclusives et son chapitre narratif.
 
