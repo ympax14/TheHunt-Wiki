@@ -91,11 +91,11 @@ The Hunt fonctionne sur **3 niveaux de temps** :
 
 ### Lancer un donjon
 
-Utilisez `/thehunt admin dungeon` pour lancer une Plongée (ou depuis le Portail des Donjons au Hub).
+Utilisez `/thehunt dungeon` pour lancer une Plongée (ou depuis le Portail des Donjons au Hub).
 
 !!! tip "Reproduire un donjon"
     Notez le **seed** affiché après la génération. Utilisez
-    `/thehunt admin dungeon seed <seed>` pour rejouer exactement le même donjon.
+    `/thehunt dungeon seed <seed>` pour rejouer exactement le même donjon.
 
 ### Thèmes disponibles
 
