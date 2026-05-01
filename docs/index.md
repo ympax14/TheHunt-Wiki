@@ -74,8 +74,8 @@ The Hunt fonctionne sur **3 niveaux de temps** :
     profondeurs, affrontez des monstres, explorez les salles et tentez de vaincre le boss final.
 
 !!! danger "Roguelite partiel"
-        Si vous mourez dans un donjon, vous perdez les items équipés pendant le run.
-        Votre inventaire hors-donjon est conservé.
+    Si vous mourez dans un donjon, vous perdez les items équipés pendant le run.
+    Votre inventaire hors-donjon est conservé.
 
 !!! info "Loop moyen — La Session (1-3h)"
     Au fil de plusieurs Plongées, vous progressez dans vos **Contrats de Chasse**, gagnez de
