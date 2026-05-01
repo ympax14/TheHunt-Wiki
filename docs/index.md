@@ -32,9 +32,13 @@
 22. [Le Codex](#22-le-codex)
 23. [La Boutique](#23-la-boutique)
 24. [Échanges entre joueurs](#24-échanges-entre-joueurs)
-25. [Commandes utiles](#25-commandes-utiles)
-26. [Conseils & Stratégies](#26-conseils--stratégies)
-27. [FAQ](#27-faq)
+25. [Camp Personnel](#25-camp-personnel)
+26. [Pêche Abyssale](#26-pêche-abyssale)
+27. [Hôtel des Ventes](#27-hôtel-des-ventes)
+28. [Tableau de Chasse](#28-tableau-de-chasse)
+29. [Commandes utiles](#29-commandes-utiles)
+30. [Conseils & Stratégies](#30-conseils--stratégies)
+31. [FAQ](#31-faq)
 
 ---
 
