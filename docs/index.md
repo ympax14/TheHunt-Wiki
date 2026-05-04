@@ -69,19 +69,19 @@ Quatre factions se disputent le contrôle des artéfacts abyssaux :
 
 The Hunt fonctionne sur **3 niveaux de temps** :
 
-!!! info "Loop court — La Plongée (5-15 min)"
+=== "Loop court — La Plongée (5-15 min)"
     Chaque fois que vous lancez un donjon, c'est une **Plongée**. Vous descendez dans les
     profondeurs, affrontez des monstres, explorez les salles et tentez de vaincre le boss final.
 
-!!! danger "Roguelite partiel"
-    Si vous mourez dans un donjon, vous perdez les items équipés pendant le run.
-    Votre inventaire hors-donjon est conservé.
+    !!! danger "Roguelite partiel"
+        Si vous mourez dans un donjon, vous perdez les items équipés pendant le run.
+        Votre inventaire hors-donjon est conservé.
 
-!!! info "Loop moyen — La Session (1-3h)"
+=== "Loop moyen — La Session (1-3h)"
     Au fil de plusieurs Plongées, vous progressez dans vos **Contrats de Chasse**, gagnez de
     la réputation auprès de votre **Faction** et accumulez de l'Or.
 
-!!! info "Loop long — L'Ère (4 semaines)"
+=== "Loop long — L'Ère (4 semaines)"
     Chaque **Ère** est une saison complète avec son propre Battle Pass, ses récompenses
     exclusives et son chapitre narratif.
 
@@ -110,12 +110,12 @@ Utilisez `/thehunt dungeon` pour lancer une Plongée (ou depuis le Portail des D
 
 ### Difficultés
 
-| Difficulté | Bonus HP mobs | Bonus dégâts | Multiplicateur loot |
-|-----------|--------------|-------------|---------------------|
-| EASY | ×0.8 | ×0.75 | ×0.9 |
-| NORMAL | ×1.0 | ×1.0 | ×1.0 |
-| HARD | ×1.5 | ×1.5 | ×1.3 |
-| NIGHTMARE | ×2.5 | ×2.0 | ×1.8 |
+| Difficulté | Multiplicateur HP mobs | Multiplicateur dégâts | Multiplicateur loot | Requis |
+|-----------|----------------------|----------------------|---------------------|--------|
+| EASY | ×0.6 | ×0.7 | ×1.8 | L1 |
+| NORMAL | ×1.0 | ×1.0 | ×1.0 | L1 |
+| HARD | ×1.5 | ×1.3 | ×0.6 | L30 |
+| NIGHTMARE | ×2.2 | ×1.7 | ×0.4 | L80 |
 
 !!! warning "NIGHTMARE"
     La difficulté NIGHTMARE est débloquée au niveau 80. Elle requiert un build solide —
@@ -569,13 +569,13 @@ Connectez-vous chaque jour pour recevoir une récompense croissante :
 
 | Jour | Récompense |
 |------|------------|
-| 1 | 50 Or |
+| 1 | 50 Or + 1 Fragment de Rune |
 | 2 | 100 Or + 50 EXP |
-| 3 | 150 Or + Fragment Abyssal |
-| 4 | 200 Or + Rune de Protection |
+| 3 | 150 Or + 1 Essence Abyssale |
+| 4 | 200 Or + 1 Rune de Protection |
 | 5 | 300 Or + 200 EXP |
-| 6 | 500 Or + Potion de Clarté |
-| 7 | 1 000 Or + Crate Chasseur |
+| 6 | 500 Or + 1 Potion de Clarté |
+| 7 | 1 000 Or + 1 Crate Chasseur |
 | 30 | Cosmétique exclusif de saison |
 
 !!! warning "Streak brisée"
@@ -825,9 +825,12 @@ En échange, vos récompenses sont augmentées de **+30%**.
 
 ### Conditions d'invasion
 
-- L'envahisseur doit être d'un niveau proche du vôtre
-- Vous devez être dans le donjon depuis au moins 3 minutes
-- Aucun boss ne doit être déjà engagé
+- L'envahisseur doit être **Level 40 minimum**
+- La cible doit avoir activé le **Mode Chassé** — sans lui, le donjon est inviolable
+- La cible doit être dans son donjon depuis au moins **5 minutes**
+- Donjon cible de profondeur **≥ 2**
+- Cooldown de **5 minutes** entre deux invasions pour le même envahisseur
+- Une même cible ne peut recevoir que **2 invasions par heure**
 
 ### Récompenses
 
@@ -875,6 +878,7 @@ Les TOP 10 de chaque Ère reçoivent un titre exclusif.
 | Corruption Max | Niveau de Corruption le plus élevé survécu | Par Ère |
 | Or Gagné | Total d'Or accumulé | Par Ère |
 | Héritage des Échos | Échos les plus utiles à la communauté | Par Ère |
+| Meilleur Pêcheur | Score de Pêche Abyssale cumulé | Hebdomadaire |
 
 Consultez les classements avec `/thehunt leaderboard [type]`.
 
@@ -924,7 +928,170 @@ Proposez un échange avec `/thehunt trade <joueur>`.
 
 ---
 
-## 25. Commandes utiles
+## 25. Camp Personnel
+
+Le **Camp Personnel** est votre zone privée instanciée dans le monde `camps_world`.
+Débloqué au **Level 10**, il évolue automatiquement selon votre niveau et prestige.
+
+### Accès
+
+```
+/thehunt camp                 — téléportation dans votre camp
+/thehunt camp visit <joueur>  — visiter le camp d'un joueur connecté
+```
+
+### Upgrades progressifs
+
+| Condition | Contenu ajouté |
+|-----------|---------------|
+| **L10** — Camp de base | Plateforme 20×20 en briques de pierre + 1 coffre central |
+| **L30** | 4 lampes de glowstone aux coins + 1 coffre supplémentaire |
+| **L50** | Trophée de boss (bloc beacon décoratif) |
+| **L80** | Forge de Surface personnelle (établi + fourneau) |
+| **P1** | Portail direct Camp → Sélecteur de donjons (obsidienne) |
+
+!!! tip "Forge de Surface"
+    La Forge de Surface dans votre camp (L80) vous permet de forger vos équipements
+    sans revenir au hub. Idéal pour les sessions longues.
+
+!!! info "Visite"
+    Vous pouvez visiter le camp d'un autre joueur tant qu'il est connecté.
+    La visite est en lecture seule — vous ne pouvez pas interagir avec ses coffres.
+
+---
+
+## 26. Pêche Abyssale
+
+La **Pêche Abyssale** est un mini-jeu actif anti-AFK. Accessible dès le Level 1
+avec une Canne à pêche sur l'un des plans d'eau du hub.
+
+### Comment pêcher
+
+1. Lancez votre canne dans l'eau → la session démarre (attente 5-15 secondes, aléatoire)
+2. Un signal sonore + titre **"MORDÚ !"** indique la fenêtre de réaction
+3. Recliquez dans les **0,8 secondes** → succès, loot distribué
+4. Aucune réaction ou ligne retirée trop tôt → poisson raté
+
+!!! warning "Anti-AFK"
+    La fenêtre de réaction est de seulement **0,8 secondes** — vous devez rester attentif.
+    Les macros et auto-clickers ne peuvent pas anticiper le signal aléatoire.
+
+### Table de loot
+
+| Loot | Chance | Score |
+|------|--------|-------|
+| Essence Abyssale | 2% | 100 pts |
+| 1× Fragment de Rune | 5% | 50 pts |
+| +100 Or | 11% | 20 pts |
+| +40 Or +20 EXP | 27% | 10 pts |
+| Poisson commun | 55% | 3 pts |
+
+### Événement Vendredi Abyssal (20h-22h)
+
+Chaque vendredi entre 20h et 22h, la table de loot est améliorée (×1.5 sur l'Or) :
+
+| Loot | Chance (vendredi) | Score |
+|------|------------------|-------|
+| Essence Abyssale | 5% | 100 pts |
+| 2× Fragment de Rune | 7% | 50 pts |
+| +200 Or | 13% | 30 pts |
+| +80 Or +30 EXP | 25% | 15 pts |
+| Poisson Abyssal | 50% | 5 pts |
+
+### Classement Meilleur Pêcheur
+
+Les scores de pêche alimentent le classement hebdomadaire **Meilleur Pêcheur**.
+Ce classement se remet à zéro chaque semaine.
+
+```
+/thehunt leaderboard fishing
+```
+
+---
+
+## 27. Hôtel des Ventes
+
+L'**Hôtel des Ventes** (HdV) est le marché joueur-à-joueur. Achetez et vendez
+des équipements, ressources et items rares entre chasseurs.
+
+### Accès
+
+```
+/thehunt hdv                        — ouvrir l'Hôtel des Ventes
+/thehunt sell <prix> [durée]        — mettre l'item en main en vente
+/thehunt sell <prix> [1h|6h|48h]    — durée optionnelle (24h par défaut)
+```
+
+### Règles
+
+| Règle | Valeur |
+|-------|--------|
+| Taxe sur vente | **7%** (prélevée sur le vendeur au moment de la vente) |
+| Annonces max par joueur | **5 simultanées** |
+| Durées disponibles | 1h, 6h, 24h (défaut), 48h |
+| Prix minimum | **100 Or** |
+
+!!! warning "Items SOULBOUND"
+    Les items marqués **SOULBOUND** ne peuvent pas être mis en vente.
+    Ce sont généralement les items exclusifs de caisses premium et les cosmétiques liés.
+
+!!! tip "Confirmation d'achat"
+    Un premier clic sur un item affiche les détails (stats, prix, vendeur).
+    Un deuxième clic confirme l'achat. Évitez les achats accidentels.
+
+### Annonces expirées
+
+Les annonces expirées sont automatiquement purgées toutes les 2 minutes.
+L'item est retourné dans l'inventaire du vendeur si la vente n'a pas abouti.
+
+---
+
+## 28. Tableau de Chasse
+
+Le **Tableau de Chasse** regroupe deux systèmes distincts : les **objectifs communautaires**
+et les **primes de joueurs**.
+
+### Accès
+
+```
+/thehunt tableau                    — ouvrir le Tableau de Chasse
+/thehunt bounty <joueur> <montant>  — poser une prime sur un joueur (P3+)
+```
+
+### Objectifs communautaires
+
+Cinq objectifs collectifs actifs en permanence. Tous les joueurs y contribuent en jouant.
+À minuit, les objectifs complétés distribuent leur récompense à tout le serveur et se réinitialisent.
+
+| Objectif | Seuil | Récompense serveur |
+|----------|-------|--------------------|
+| Tuer des mobs abyssaux | 5 000 | +30% drop rate demain |
+| Compléter des donjons | 50 | Boss Légendaire dimanche |
+| Prises de pêche abyssale | 200 | +50% Or de pêche demain |
+| Éliminer des Hunters | 100 | +20% EXP demain |
+| Forger des équipements | 300 | -15% coût forge demain |
+
+!!! success "Récompense collective"
+    Quand un objectif est atteint, **tous les joueurs connectés** bénéficient du bonus
+    le lendemain. Plus le serveur est actif, plus les bonus sont fréquents.
+
+### Primes de joueurs
+
+Réservé aux joueurs **Prestige 3 et plus**.
+
+- Minimum de **100 Or** par prime
+- L'Or est prélevé immédiatement à la pose
+- La prime est automatiquement réclamée par le joueur qui kill la cible
+- Les primes actives sont visibles dans le Tableau de Chasse (icône crâne)
+- En cas d'invasion : si le défenseur est tué, son éventuelle prime est réclamée par l'envahisseur
+
+!!! warning "Primes et PvP"
+    Poser une prime n'autorise pas le PvP libre en dehors des zones PvP.
+    Les invasions spectrales restent le seul cadre PvP en donjon.
+
+---
+
+## 29. Commandes utiles
 
 ### Commandes joueurs
 
@@ -932,21 +1099,28 @@ Proposez un échange avec `/thehunt trade <joueur>`.
 |----------|-------------|
 | `/thehunt stats [joueur]` | Voir ses statistiques |
 | `/thehunt dungeon` | Démarrer un donjon |
-| `/thehunt dungeon seed <seed>` | Rejouer un donjon exact |
 | `/thehunt map` | Minimap du donjon actif |
-| `/thehunt bp [claim\|status]` | Battle Pass |
+| `/thehunt bp [claim|status]` | Battle Pass |
 | `/thehunt contracts` | Contrats de Chasse |
-| `/thehunt invade <joueur>` | Envahir un donjon |
+| `/thehunt invade <joueur>` | Envahir un donjon (L40+, Mode Chassé requis) |
 | `/thehunt leaderboard [type]` | Classements |
 | `/thehunt faction [id]` | Rejoindre une faction |
 | `/thehunt shop` | Boutique hebdomadaire |
 | `/thehunt codex` | Votre Codex |
-| `/thehunt arena [join\|leave]` | Arène de Chasse |
+| `/thehunt arena [join|leave]` | Arène de Chasse |
 | `/thehunt trade <joueur>` | Proposer un échange |
 | `/thehunt guild` | Gérer votre guilde |
 | `/thehunt prestige [confirm]` | Effectuer votre Prestige |
-| `/thehunt titles [set\|clear]` | Gérer vos titres cosmétiques |
+| `/thehunt titles [set|clear]` | Gérer vos titres cosmétiques |
 | `/thehunt achievements` | Voir vos succès |
+| `/thehunt perks` | Gérer vos Perks passifs |
+| `/thehunt forge` | Accéder au Forgeron |
+| `/thehunt camp` | Accéder à votre Camp Personnel (L10+) |
+| `/thehunt camp visit <joueur>` | Visiter le camp d'un joueur connecté |
+| `/thehunt hdv` | Ouvrir l'Hôtel des Ventes |
+| `/thehunt sell <prix> [durée]` | Mettre l'item en main en vente (1h/6h/48h) |
+| `/thehunt bounty <joueur> <montant>` | Poser une prime sur un joueur (P3+) |
+| `/thehunt tableau` | Ouvrir le Tableau de Chasse |
 
 ### Commandes admin (`thehunt.admin`)
 
@@ -974,7 +1148,7 @@ Proposez un échange avec `/thehunt trade <joueur>`.
 
 ---
 
-## 26. Conseils & Stratégies
+## 30. Conseils & Stratégies
 
 ### Pour débuter
 
@@ -1018,7 +1192,7 @@ Proposez un échange avec `/thehunt trade <joueur>`.
 
 ---
 
-## 27. FAQ
+## 31. FAQ
 
 ??? question "Que se passe-t-il si je meurs dans un donjon ?"
     Vous perdez les items qui étaient dans votre inventaire au moment de la mort.
@@ -1065,6 +1239,25 @@ Proposez un échange avec `/thehunt trade <joueur>`.
     2-4h et sont annoncés à tout le serveur. Ils durent 10-30 minutes et modifient
     les récompenses ou les conditions de jeu globalement.
 
+??? question "Comment accéder à mon Camp Personnel ?"
+    Le Camp Personnel se débloque au **Level 10**. Utilisez `/thehunt camp` pour vous
+    y téléporter. Le camp est automatiquement amélioré quand vous atteignez L30, L50,
+    L80 et P1 — vous n'avez rien à faire manuellement.
+
+??? question "Comment fonctionne la Pêche Abyssale ?"
+    Lancez votre canne à pêche dans un plan d'eau du hub. Après 5-15 secondes, un titre
+    **"MORDÚ !"** apparaît — vous avez **0,8 secondes** pour recliquer. Rater le signal
+    ou retirer la ligne trop tôt annule la session.
+
+??? question "Mes annonces HdV expirent — où sont mes items ?"
+    Les annonces non vendues vous sont automatiquement retournées à l'expiration.
+    Les items reviennent directement dans votre inventaire (ou sont droppés à vos pieds
+    si l'inventaire est plein). Vérifiez `/thehunt hdv` → "Mes Annonces".
+
+??? question "Pourquoi je ne peux pas poser de prime ?"
+    Les primes requièrent le **Prestige 3** minimum. En dessous de P3, l'option
+    n'est pas disponible. Le montant minimum est de **100 Or**.
+
 ---
 
-*Wiki mis à jour le 2026-04-28 — Rendu MkDocs avec Material for MkDocs + admonitions.*
+*Wiki mis à jour le 2026-05-02 — Rendu MkDocs avec Material for MkDocs + admonitions.*
